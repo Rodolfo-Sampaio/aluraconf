@@ -55,6 +55,11 @@ table {
 /* :root {
     font-size: 15px;
 } */
+.container {
+  width: 94%;
+  margin: 0 auto;
+}
+
 .header {
   background: url("../img/destaque.jpeg") no-repeat;
   background-size: cover;
@@ -112,4 +117,21 @@ table {
   .header .jumbotron {
     font-size: 28px;
   }
+}
+
+.panel-about {
+  margin-top: 20px;
+  text-align: center;
+}
+.panel-about .title {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+.panel-about .subtitle {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.panel-about .about-description {
+  font-size: 18px;
+  line-height: 30px;
 }/*# sourceMappingURL=style.css.map */
