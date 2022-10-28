@@ -1,0 +1,52 @@
+@import '../abstract/variaveis';
+
+.panel-speakers {
+    padding-top: 40px;
+    background: $cor-terciaria;
+    .about-speakers {
+        text-align: center;
+    }
+
+    .title {
+        color: $cor-primaria;
+        font-size: 40px;
+        margin-bottom: 16px;
+    }
+
+    .speakers {
+        text-align: center;
+    }
+    
+    .subtitle {
+        color: $cor-primaria;
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .speaker {
+        background: $cor-primaria;
+        display: inline-block;
+        margin: 0 16px 32px 0;
+        padding: 18px;
+        border-radius: 10px;
+        width: 220px;
+        vertical-align: top;
+    }
+
+    .speaker-image {
+        border-radius: 50%;
+    }
+
+    .speaker-name {
+        margin-top: 10px;
+    }
+
+    .speaker-bio {
+        font-weight: bold;
+        margin-top: 16px;
+    }
+
+    .speaker-speach {
+        margin-top: 16px;
+    }
+}

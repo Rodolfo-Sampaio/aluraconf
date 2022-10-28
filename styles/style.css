@@ -90,7 +90,7 @@ table {
   text-transform: uppercase;
 }
 .header .jumbotron .panel-main {
-  color: white;
+  color: #FFFFFF;
   text-shadow: 4px 4px 10px black;
 }
 .header .jumbotron .title {
@@ -103,7 +103,7 @@ table {
 }
 .header .jumbotron .button {
   display: inline-block;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
   font-size: 18px;
   padding: 24px 64px;
@@ -134,4 +134,47 @@ table {
 .panel-about .about-description {
   font-size: 18px;
   line-height: 30px;
+}
+
+.panel-speakers {
+  padding-top: 40px;
+  background: #EF7247;
+}
+.panel-speakers .about-speakers {
+  text-align: center;
+}
+.panel-speakers .title {
+  color: #FFFFFF;
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+.panel-speakers .speakers {
+  text-align: center;
+}
+.panel-speakers .subtitle {
+  color: #FFFFFF;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+.panel-speakers .speaker {
+  background: #FFFFFF;
+  display: inline-block;
+  margin: 0 16px 32px 0;
+  padding: 18px;
+  border-radius: 10px;
+  width: 220px;
+  vertical-align: top;
+}
+.panel-speakers .speaker-image {
+  border-radius: 50%;
+}
+.panel-speakers .speaker-name {
+  margin-top: 10px;
+}
+.panel-speakers .speaker-bio {
+  font-weight: bold;
+  margin-top: 16px;
+}
+.panel-speakers .speaker-speach {
+  margin-top: 16px;
 }/*# sourceMappingURL=style.css.map */
