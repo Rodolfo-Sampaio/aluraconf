@@ -58,42 +58,58 @@ body {
 }
 
 .container {
-  width: 94%;
+  width: 90%;
   margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 70%;
+  }
 }
 
 .field {
-  margin-bottom: 16px;
+  width: 80%;
+  margin: 0 auto 16px auto;
 }
 .field label {
   display: block;
   font-size: 20px;
   margin-bottom: 10px;
   font-weight: bold;
+  color: #78594f;
 }
 .field .field-input {
   display: block;
+  box-sizing: border-box;
   width: 100%;
   font-size: 20px;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px #48A3A6;
+  border: none;
+  box-shadow: 2px 2px 4px #c7c7c7, -2px -2px 4px #f9f9f9;
 }
 
 .button {
   display: inline-block;
-  color: #FFFFFF;
+  color: #78594f;
   text-decoration: none;
   font-size: 18px;
-  padding: 24px 64px;
-  background-color: #48A3A6;
+  padding: 20px 25px;
+  background-color: rgba(225, 208, 202, 0.7607843137);
   border-radius: 8px;
+  border: none;
+  text-transform: uppercase;
+  margin: 15px;
+  transition: background-color 0.2s;
+}
+.button:hover {
+  background-color: rgba(210, 185, 176, 0.7607843137);
 }
 
 .header {
   background: url("../img/destaque.jpeg") no-repeat;
   background-size: cover;
-  padding-top: 32px;
+  padding-top: 50px;
 }
 .header .main-menu {
   text-align: center;
@@ -112,7 +128,7 @@ body {
   transition: background-color 0.4s;
 }
 .header .main-menu .menu-item a:hover {
-  background-color: #48A3A6;
+  background-color: rgba(225, 208, 202, 0.7607843137);
 }
 .header .jumbotron {
   text-align: center;
@@ -120,16 +136,18 @@ body {
   text-transform: uppercase;
 }
 .header .jumbotron .panel-main {
-  color: #FFFFFF;
+  color: #e0e0e0;
   text-shadow: 4px 4px 10px black;
 }
 .header .jumbotron .title {
   font-size: 3em;
+  margin-top: 20px;
 }
 .header .jumbotron .subtitle {
   font-size: 2.625em;
   color: #64FF64;
   margin-top: 8px;
+  font-weight: 600;
 }
 .header .jumbotron .panel-subscribe {
   margin-top: 28px;
@@ -141,11 +159,12 @@ body {
 }
 
 .panel-about {
-  margin-top: 20px;
+  background-color: rgba(224, 224, 224, 0.6470588235);
+  padding: 30px 0;
   text-align: center;
 }
 .panel-about .title {
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 16px;
 }
 .panel-about .subtitle {
@@ -153,61 +172,76 @@ body {
   margin-bottom: 16px;
 }
 .panel-about .about-description {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 28px;
+  width: 100%;
+}
+.panel-about .about-description p {
+  max-width: 950px;
+  margin: 0 auto;
 }
 
 .panel-speakers {
-  padding-top: 40px;
-  background: #EF7247;
+  padding: 30px 0;
+  background: url("../../img/background-palestrantes2.svg");
+  background-size: cover;
 }
 .panel-speakers .about-speakers {
   text-align: center;
 }
 .panel-speakers .title {
-  color: #FFFFFF;
-  font-size: 40px;
+  font-size: 32px;
   margin-bottom: 16px;
 }
 .panel-speakers .speakers {
   text-align: center;
 }
 .panel-speakers .subtitle {
-  color: #FFFFFF;
-  font-size: 32px;
-  margin-bottom: 16px;
+  font-size: 22px;
+  margin-bottom: 28px;
+  font-weight: 500;
 }
 .panel-speakers .speaker {
-  background: #FFFFFF;
+  background: #e0e0e0;
   display: inline-block;
-  margin: 0 16px 32px 0;
+  margin: 0 16px 32px;
   padding: 18px;
   border-radius: 10px;
   width: 220px;
   vertical-align: top;
+  box-shadow: 2px 2px 4px #c7c7c7, -2px -2px 4px #f9f9f9;
 }
 .panel-speakers .speaker-image {
   border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 4px 4px 6px #c7c7c7, -4px -4px 6px #f9f9f9;
 }
 .panel-speakers .speaker-name {
-  margin-top: 10px;
+  margin-top: 18px;
+  font-size: 1.5rem;
 }
 .panel-speakers .speaker-bio {
   font-weight: bold;
   margin-top: 16px;
 }
-.panel-speakers .speaker-speach {
+.panel-speakers .speaker-knowledge {
   margin-top: 16px;
+  line-height: 1.4rem;
 }
 
 .panel-form {
-  margin-top: 32px;
+  padding: 32px 0;
+  background-color: rgba(224, 224, 224, 0.6470588235);
 }
 .panel-form .title {
   font-size: 32px;
-  color: #EF7247;
+  color: #78594f;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .button-place {

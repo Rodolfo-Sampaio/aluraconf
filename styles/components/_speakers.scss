@@ -1,15 +1,16 @@
 @import '../abstract/variaveis';
 
 .panel-speakers {
-    padding-top: 40px;
-    background: $cor-terciaria;
+    padding: 30px 0;
+    background: url('../../img/background-palestrantes2.svg');
+    background-size: cover;
+    
     .about-speakers {
         text-align: center;
     }
 
     .title {
-        color: $cor-primaria;
-        font-size: 40px;
+        font-size: 32px;
         margin-bottom: 16px;
     }
 
@@ -18,27 +19,35 @@
     }
     
     .subtitle {
-        color: $cor-primaria;
-        font-size: 32px;
-        margin-bottom: 16px;
+        font-size: 22px;
+        margin-bottom: 28px;
+        font-weight: 500;
     }
 
     .speaker {
         background: $cor-primaria;
         display: inline-block;
-        margin: 0 16px 32px 0;
+        margin: 0 16px 32px;
         padding: 18px;
         border-radius: 10px;
         width: 220px;
         vertical-align: top;
+        box-shadow:  2px 2px 4px #c7c7c7,
+             -2px -2px 4px #f9f9f9;
     }
 
     .speaker-image {
         border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        box-shadow:  4px 4px 6px #c7c7c7,
+             -4px -4px 6px #f9f9f9;
     }
 
     .speaker-name {
-        margin-top: 10px;
+        margin-top: 18px;
+        font-size: 1.5rem;
     }
 
     .speaker-bio {
@@ -46,7 +55,8 @@
         margin-top: 16px;
     }
 
-    .speaker-speach {
+    .speaker-knowledge {
         margin-top: 16px;
+        line-height: 1.4rem;
     }
 }

@@ -1,13 +1,15 @@
 @import '../abstract/variaveis';
 
 .panel-form {
-    margin-top: 32px;
+    padding: 32px 0;
+    background-color: $cor-primaria-ligth;
 
     .title {
         font-size: 32px;
         color: $cor-terciaria;
         text-align: center;
         text-transform: uppercase;
+        margin-bottom: 20px;
     }
 }
 

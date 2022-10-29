@@ -6,36 +6,51 @@ body {
 }
 
 .container {
-    width: 94%;
+    width: 90%;
     margin: 0 auto;
+    @media #{$mq-desktop} {
+        width: 70%;
+    }
 }
 
 .field {
-    margin-bottom: 16px;
+    width: 80%;
+    margin: 0 auto 16px auto;
     
     label {
         display: block;
         font-size: 20px;
         margin-bottom: 10px;
         font-weight: bold;
+        color: $cor-terciaria;
     }
 
     .field-input {
         display: block;
+        box-sizing: border-box;
         width: 100%;
         font-size: 20px;
-        padding: 5px;
+        padding: 10px;
         border-radius: 5px;
-        box-shadow: 1px 1px 10px $botao-cor-secundaria;
+        border: none;
+        box-shadow:  2px 2px 4px #c7c7c7,
+             -2px -2px 4px #f9f9f9;
     }
 }
 
 .button {
     display: inline-block;
-    color: $cor-primaria;
+    color: $cor-terciaria;
     text-decoration: none;
     font-size: 18px;
-    padding: 24px 64px;
+    padding: 20px 25px;
     background-color: $botao-cor-secundaria;
     border-radius: 8px;
+    border: none;
+    text-transform: uppercase;
+    margin: 15px;
+    transition: background-color  .2s;
+    &:hover {
+        background-color: darken($botao-cor-secundaria, 8%);
+    }
 }
