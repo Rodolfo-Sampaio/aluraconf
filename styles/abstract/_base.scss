@@ -1,8 +1,41 @@
-/* :root {
-    font-size: 15px;
-} */
+@import '../abstract/variaveis';
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;800;900&display=swap");
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
 
 .container {
     width: 94%;
     margin: 0 auto;
+}
+
+.field {
+    margin-bottom: 16px;
+    
+    label {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .field-input {
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px $botao-cor-secundaria;
+    }
+}
+
+.button {
+    display: inline-block;
+    color: $cor-primaria;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 24px 64px;
+    background-color: $botao-cor-secundaria;
+    border-radius: 8px;
 }
